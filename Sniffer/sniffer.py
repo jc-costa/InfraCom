@@ -25,5 +25,5 @@ while(True):
 
             if r.status_code == 200:
                 r.raw.decode_content = True
-                with open("Fotos/" + fotos,'wb') as f:
+                with open(fotos,'wb') as f:
                     shutil.copyfileobj(r.raw, f)
